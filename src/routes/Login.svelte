@@ -2,7 +2,7 @@
   import {
     afterLoginRedirect,
     loginCatchRedirect,
-  } from "src/afterLoginRedirect.js";
+  } from "../afterLoginRedirect";
 
   import type { ApiError } from "@madappgang/identifo-js";
   import { auth } from "../store";

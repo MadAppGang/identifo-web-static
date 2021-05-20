@@ -2,8 +2,7 @@
   "extends": "@tsconfig/svelte/tsconfig.json",
   "compilerOptions": {
     "paths": {
-      "baseUrl": ["./"],
-      "@madappgang/identifo-js": ["./identifo.js/dist"]
+      "baseUrl": ["./"]
     }
   },
   "include": ["src/**/*"],

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import "./bootstrap/css/bootstrap.min.css";
   import "./styles.css";
   import IdentifoAuth from "@madappgang/identifo-js";
   import { auth } from "./store";
@@ -55,26 +56,10 @@
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
     crossorigin="anonymous"
   />
-  <style
+  <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"></style>
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
+    crossorigin="anonymous"></script>
 </svelte:head>
 
 <div class="text-center w-100">

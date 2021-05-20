@@ -26,6 +26,7 @@
     "typescript": "^4.0.0"
   },
   "dependencies": {
+    "@madappgang/identifo-js": "github:sokolovstas/identifo.js#api-integration",
     "@rollup/plugin-alias": "^3.1.2",
     "page": "^1.11.6",
     "sirv-cli": "^1.0.0"

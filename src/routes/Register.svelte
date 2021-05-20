@@ -1,5 +1,5 @@
 <script lang="typescript">
-  import { afterLoginRedirect } from "src/afterLoginRedirect.js";
+  import { afterLoginRedirect } from "../afterLoginRedirect";
 
   import type { ApiError } from "@madappgang/identifo-js";
   import { auth } from "../store";
