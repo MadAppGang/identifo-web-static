@@ -7,7 +7,7 @@ import {
 export function afterLoginRedirect(e: LoginResponse) {
   var urlParams = new URLSearchParams(window.location.search);
   const callback = urlParams.get("callback_uri");
-  const appID = urlParams.get("app_id");
+  const appID = urlParams.get("app_id") || urlParams.get("appId");
 
   if (e.require_2fa) {
     if (!e.enabled_2fa) {
@@ -51,7 +51,7 @@ export function afterLoginRedirect(e: LoginResponse) {
 export function loginCatchRedirect(data: ApiError) {
   var urlParams = new URLSearchParams(window.location.search);
   const callback = urlParams.get("callback_uri");
-  const appID = urlParams.get("app_id");
+  const appID = urlParams.get("app_id") || urlParams.get("appId");
 
   if (data.id === APIErrorCodes.PleaseEnableTFA) {
     var urlParams = new URLSearchParams({

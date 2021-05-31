@@ -11,12 +11,12 @@
   let params;
 
   var urlParams = new URLSearchParams(window.location.search);
-  const app_id = urlParams.get("app_id");
+  const appID = urlParams.get("app_id") || urlParams.get("appId");
 
   auth.set(
     new IdentifoAuth({
       url: "http://localhost:8081/", //location.origin,
-      appId: app_id,
+      appId: appID,
     })
   );
   router.base("");
@@ -63,8 +63,8 @@
 </svelte:head>
 
 <div class="text-center w-100">
-  {#if !app_id}
-    app_id query param not set
+  {#if !appID}
+    app_id or appId query param not set
   {:else}
     <svelte:component this={page} {params} />
   {/if}

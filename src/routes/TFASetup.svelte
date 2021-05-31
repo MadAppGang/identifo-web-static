@@ -5,7 +5,7 @@
 
   var urlParams = new URLSearchParams(window.location.search);
   const callback = urlParams.get("callback_uri");
-  const appID = urlParams.get("app_id");
+  const appID = urlParams.get("app_id") || urlParams.get("appId");
 
   const mandatory = urlParams.get("mandatory") === "true";
   let type: TFAType;
